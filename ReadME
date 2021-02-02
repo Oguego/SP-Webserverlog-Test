@@ -1,0 +1,16 @@
+This is a simple Ruby script.
+
+The script aim to receive a file log as argument (webserver.log in this case)
+
+Then return most viewed webpage in an order
+
+Also the unique visit in an order
+
+The spec is contain in the "parser_spec.rb" and can be executed using 'rspec' from the root directory
+
+The  parser.rb contain the Parser Class with functions to process the 'webserver.log file'
+
+both functions can be executed using:
+
+ruby -r "./lib/parser.rb" -e "Parser.new.process_unique_file_url './lib/webserver.log'"
+ruby -r "./lib/parser.rb" -e "Parser.new.process_unique_visit './lib/webserver.log'"
